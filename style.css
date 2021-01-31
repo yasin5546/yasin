@@ -1,0 +1,605 @@
+/*=========================
+common
+===========================*/
+body{
+    color: #7f7d77;
+    font-family: Georgia, sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 2000px;
+    width: 96%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.allign_left{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    
+}
+
+.allign_right{
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    
+}
+
+.allign_center{
+    display: block;
+  
+    margin: 0 auto 15px;
+}
+
+
+
+
+
+
+/*=========================
+top header
+===========================*/
+.header_area{
+    width:100%;
+    clear: both;
+    
+}
+#top_header_area{
+     background: #373c42;
+     width: 100%;
+
+}
+.inner_top_header{
+    overflow: hidden;
+        width: 100%;
+
+
+}
+.mini_menu{
+    float: right;
+    
+}
+
+.mini_menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+
+}
+.mini_menu ul li{
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+}
+.mini_menu ul li::after{
+    content: "";
+    background: #c4bdbd;
+    margin-right: 15px;
+    position: absolute;
+    height: 12px;
+    width: 1px;
+    top: 5px;
+    right: -25px;
+    
+}
+.mini_menu ul li:last-child::after{
+    display: none;
+}
+.mini_menu ul li a{
+    color: #c4bdbd;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+}
+.mini_menu ul li a:hover{
+    color: white;
+    transition: 1s;
+}
+
+.social_area{
+    float: left;
+    
+}
+.social_area ul{
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+
+}
+.social_area ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 2px;
+    
+}
+.social_area ul li a{
+    color: #edeeef;
+    
+}
+.social_area ul li a:hover{
+    color: #c8232c;
+    transition: .5s;
+}
+
+/*=============================================
+main header
+=============================================*/
+
+#main_header_area{
+    background: #4c555e;
+
+    width: 100%;
+    padding: 25px 0;
+    clear: both;
+}
+.inner_main_header{
+    overflow: hidden;
+
+}
+.logo_area{
+    float: left;
+    max-width: 300px;
+    width: 100%;
+}
+
+.search_area{
+    float: right;
+    
+    
+    
+}
+.search_area form{
+    padding: 15px 0;
+    border-radius: 35px;
+    max-width: 295px;
+    width: 100%;
+
+    
+}
+.text{
+    background: #65717c;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+.submit{
+    background: #65717c;   
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*=============================================
+menu bar
+=============================================*/
+
+#menu_bar{
+    width: 100%;
+    clear: both;
+    position: relative;
+    overflow: visible;
+}
+
+.inner_menu{
+    background: #31363c;
+    min-height: 20px;
+    
+}
+
+#menu_bar ul{
+    margin: 0;
+    padding: 5;
+    list-style: none;
+    text-align: center;
+       
+}
+
+#menu_bar ul li{
+    display: inline-block;
+    margin: 3px 10px;
+    position: relative;
+}
+#menu_bar ul li a{
+    color: #ffffff;
+    text-decoration: none; 
+    display: block;
+    padding: 5px;
+    
+}
+#menu_bar ul li a:hover{
+    color: grey;
+    transition: .5s;
+}
+
+#menu_bar ul li:hover a{
+    color: grey;
+}
+
+#menu_bar ul li:hover ul li a{
+    color: white;
+}
+
+/*==============dropdown style===============*/
+
+#menu_bar ul ul{
+    position: absolute;
+    background: #31363c;
+    width: 120px;
+    left: -999999px;
+    top: 30px;
+    padding: 0;    
+}
+
+#menu_bar ul li:hover ul{
+   left: 0;   
+}
+
+#menu_bar ul li:hover ul ul{
+   left: -9999999px;   
+}
+#menu_bar ul ul ul{
+    left: 120px;
+    top: 0px;
+    
+}
+
+#menu_bar ul li ul li:hover ul{
+   left: 120px;   
+}
+
+#menu_bar ul ul li{
+    margin: 0;
+    display: block;
+    padding: 0;   
+}
+
+#menu_bar ul ul li a:hover{
+    background: red; 
+    transition: .5s;
+
+}
+
+#menu_bar ul ul li:hover a{
+    background: red;   
+}
+
+#menu_bar ul ul li:hover ul li a{
+    background: none;   
+}
+
+#menu_bar ul ul li ul li a:hover{
+    background: red;   
+}
+
+
+
+/*=============================================
+slider area
+=============================================*/
+   /*jssor slider loading skin double-tail-spin css*/
+        .jssorl-004-double-tail-spin img {
+            animation-name: jssorl-004-double-tail-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-004-double-tail-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 031 css*/
+        .jssorb031 {position:absolute;}
+        .jssorb031 .i {position:absolute;cursor:pointer;}
+        .jssorb031 .i .b {fill:#000;fill-opacity:0.6;stroke:#fff;stroke-width:1600;stroke-miterlimit:10;stroke-opacity:0.8;}
+        .jssorb031 .i:hover .b {fill:#fff;fill-opacity:1;stroke:#000;stroke-opacity:1;}
+        .jssorb031 .iav .b {fill:#fff;stroke:#000;stroke-width:1600;fill-opacity:.6;}
+        .jssorb031 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+
+/*=============================================
+information area
+=============================================*/
+#information_area{
+    overflow: hidden;
+    
+}
+.inner_information {
+	padding: 10px;
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: 96px;
+	width: 96%;
+}
+.inner_information h2{
+    font-size: 45px;
+    color: black;
+    line-height: 1em;
+    margin-bottom: 15px;
+    font-weight: normal;
+    word-spacing: 5px;
+    
+    
+}
+.inner_information p{
+    font-size: 16px;
+    text-align: justify;
+    
+}
+
+
+
+
+
+/*=============================================
+work area
+=============================================*/
+
+#work_area{
+    background: #ffffff;
+    padding: 15px 0;
+    
+}
+.inner_work{
+    overflow: hidden;
+    
+    
+}
+.work{
+    width: 23%;
+    float: left;
+    margin: 0 1% 10px;
+}
+
+.info_child_name{
+    margin-left: 0; 
+    
+    
+}
+.info_child_name h2{
+    font-size: 20px;
+    text-align: center;
+}
+.info_child_name img{
+    margin-left: 20px;
+    
+}
+.manage h2{
+    
+}
+.service_child_name{}
+
+.service_child_name h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.buschild_name{}
+.buschild_name h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.scol_child_name{
+    margin-right: 0;
+}
+
+.scol_child_name h2{
+    font-size: 20px;
+    text-align: center;
+}
+.work p{
+    text-align: justify;
+    font-size: 15px;
+}
+
+
+
+/*=============================================
+article
+=============================================*/
+#article{
+    background: #65707a;
+    color: #ffffff;
+        border-radius: 5px;
+
+}
+
+.inner_article_area h2{
+    text-align: center;
+    margin: 10px;
+    line-height: 1.5em;
+    font-size: 25px;
+    padding: 5px;
+}
+
+
+/*=============================================
+fortfolio area
+=============================================*/
+
+#portfolio_area{
+    background: #fff;
+}
+.inner_portfolio{
+        overflow: hidden;
+
+}
+
+.portfolio{
+    margin-top: 30px;
+    width: 22%;
+    float: left;
+    margin: 10px;
+    padding: 5px;
+}
+.portfolio p{
+    text-align: justify;
+}
+.portfolio1{
+        margin-left: 0;
+
+}
+.portfolio2{
+    
+}
+.portfolio3{
+    
+}
+.portfolio4{
+        margin-right: 0;
+
+}
+.portfolio a{
+    text-decoration: none;
+    color: #4c555e;
+}
+
+.portfolio a:hover{
+    color: red;
+}
+
+
+
+/*=============================================
+Footer area
+=============================================*/
+#footer{
+    background: #ededed;
+}
+
+.inner_footer{
+    overflow: hidden;
+}
+
+.footer{
+    width: 32%;
+    float: left;
+    margin: 0 1% 10px;
+    
+}
+.footer_child1{
+    margin-left: 0;
+}
+.footer_child1 a{
+    text-decoration: none;
+    color: #4c555e;
+}
+.footer_child2{
+    margin-right: 5px 5px;
+    
+}
+.footer_child2 ul li{
+    border-bottom: 1px solid #4c555e;
+    
+    
+}
+.footer_child3{
+    margin-right: 0;
+    
+}
+.footer_child3 input{
+    width: 250px;
+    display: block;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    
+}
+.footer_child3 input[type=submit]{
+    width: 80px;
+    background: #4c555e;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.footer_child1 p{
+    text-align: justify;
+    font-size: 15px;
+   
+    
+}
+
+.footer_child3 p{
+    text-align: justify;
+    font-size: 15px;   
+}
+
+.footer_child2 a{
+    text-decoration: none;
+    color: #4c555e;
+    
+}
+
+
+.footer_child2 a:hover{
+    background: red;
+    color: white;
+    transition: .5s;
+
+}
+
+
+
+/*=============================================
+copywrite area
+=============================================*/
+
+#copywright_area{
+    background: #8b8d8f;
+    padding: 10px;
+    color: white;
+
+    
+}
+.inner_copyright{
+    overflow: hidden;
+}
+
+
+.left_copywright{
+    float: left;
+}
+.right_copywright{
+    float: right;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

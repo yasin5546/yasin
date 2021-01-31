@@ -1,0 +1,51 @@
+/*tablet layout*/
+@media only screen and (min-width:220px) and (max-width:991px){
+.inner_menu {background: none;.inner_menu {display: none;}   } 
+ 
+.inner_menu {min-height: 1px;}
+.inner_article_area h2 {font-size: 17px;}
+.portfolio {width: 96%;} 
+#copywright_area {padding: 2px;} 
+    
+    
+}
+/*mobile layout*/
+@media only screen and (min-width:220px) and (max-width:480px){
+    
+.mini_menu {width: 100%;margin-bottom: 5px;margin-top: 5px;}
+.mini_menu ul {text-align: center;}
+.social_area {width: 100%;}
+.social_area ul {text-align: center;float: none;}
+.logo_area {max-width: 180px;margin: 0 auto;float: none;}
+.search_area {float: none;max-width: 240px;margin: 0 auto;}
+.inner_information {padding: 2px;margin-right: 3px;margin-left: 3px;width: 94%;}  
+.inner_information h2 {font-size: 37px;}
+.inner_information p {font-size: 14px;}    
+.work {width: 98%;float: right;margin: 0 1% 10px;}
+.info_child_name img {float: left;padding: 0;}  
+.info_child_name h2 {font-size: 20px;text-align: left;}
+.service_child_name h2 {font-size: 20px;text-align: left;}
+.buschild_name h2 {font-size: 20px;text-align: left;} 
+.scol_child_name h2 {font-size: 20px;text-align: left;}
+.inner_article_area h2 {font-size: 12px;}
+.footer {width: 98%;float: left;margin: 0 1% 10px;}
+.footer_child3 input[type="submit"] {width: 57px;}
+.left_copywright {width: 100%;font-size: 12px;overflow: hidden;text-align: center;}
+.right_copywright {width: 100%;font-size: 12px;text-align: center;}
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
